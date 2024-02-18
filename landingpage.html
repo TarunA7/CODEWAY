@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses Landing Page</title>
+    <style>/* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        section h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .course {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .course h3 {
+            margin-top: 10px;
+        }
+        
+        .course p {
+            margin-bottom: 10px;
+        }
+        
+        .course a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .course a:hover {
+            background-color: #0056b3;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Online Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="#popular">Popular Courses</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="popular">
+        <h2>Popular Courses</h2>
+        <div class="course">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript, and more.</p>
+            <a href="#">Enroll Now</a>
+        </div>
+        <div class="course">
+            <h3>Data Science</h3>
+            <p>Explore data analysis and machine learning.</p>
+            <a href="#">Enroll Now</a>
+        </div>
+        <div class="course">
+            <h3>Graphic Design</h3>
+            <p>Create stunning visuals with Adobe Creative Suite.</p>
+            <a href="#">Enroll Now</a>
+        </div>
+    </section>
+
+    <section id="subjects">
+        <h2>Subjects</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Science</li>
+            <li>Graphic Design</li>
+            <li>Marketing</li>
+            <li>Photography</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Courses. All rights reserved.</p>
+    </footer>
+</body>
+</html>
