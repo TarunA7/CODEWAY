@@ -1,167 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Courses Landing Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        header h1 {
-            margin: 0;
-        }
-        
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        nav ul li {
-            display: inline;
-        }
-        
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        
-        nav ul li a:hover {
-            background-color: #0056b3;
-        }
-        
-        section {
-            padding: 20px;
-        }
-        
-        section h2 {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .course {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .course h3 {
-            margin-top: 10px;
-        }
-        
-        .course p {
-            margin-bottom: 10px;
-        }
-        
-        .course a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        
-        .course a:hover {
-            background-color: #0056b3;
-        }
-        
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        ul li {
-            margin-bottom: 10px;
-        }
-        
-        footer {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-        </style>
-</head>
-<body>
-    <header>
-        <h1>Explore Online Courses</h1>
-        <nav>
-            <ul>
-                <li><a href="#popular">Popular Courses</a></li>
-                <li><a href="#subjects">Subjects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Heritage and Culture</title>
+      <style>*{
+        margin: 0;
+        padding: 0;
+        font-family:Poppins,sans-serif;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-image:linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url("https://cdn.glitch.global/4385b20b-e08a-4fec-a384-9f9379716f25/background.png?v=1696584975916");
+        background-size:cover;
+        background-position: center;
+        padding: 10 px 8%;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .container img{
+        width: 160px;
+        cursor: pointer;
+        position:relative;
+        left:5px;
+    }
+    nav ul{agra
+        list-style: none;
+        width: 100%;
+        text-align: right;
+        padding-right: 60px;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+      position: relative;
+      bottom:28px;
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        background: #f5168d;
+        color:#fff;
+        font-weight:500 ;
+        cursor: pointer;
+        position:relative;
+        bottom:3px;
+        right:7px;
+    }
+    .btnn{
+        display: flex;
+        align-items: center;
+        padding: 14px 24px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        background: #f5168d;
+        color:#fff;
+        font-weight:500 ;
+        cursor: pointer;
+        position:relative;
+        bottom:55.7px;
+        left:535px;
+    }
+    .btn img{
+        width: 30px;
+        margin-right: 15px;
+    }
+    .content{
+        margin-top: 14%;
+        color: #fff;
+        max-width: 620px;
+    }
+    .content h1{
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 15px;
+    }
+    * {
+        box-sizing: border-box;
+      }
+      
+      #myInput {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      
+      #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: -1px; 
+        background-color: #f6f6f6;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block;
+        position:relative;
+        bottom:50px;
+      }
+      
+      #myUL li a:hover:not(.header) {
+        background-color: #eeee;
+      }
+      .form btn{
+        font-size: 15px;
+        padding: 10px 30px;
+    }
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color:#7AA6D7;
+      color:white;
+    }
+    .butn{
+    display: flex;
+        align-items: center;
+        padding: 7px 12px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        background: #f5168d;
+        color:#fff;
+      font-weight:500 ;
+        position:relative;
+        top:15px;
+        left:1170px;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0; 
+    }
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65));
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      position: relative;
+      top:7px;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }</style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <img src="https://cdn.glitch.global/4385b20b-e08a-4fec-a384-9f9379716f25/icon1.jpg?v=1696590662431" alt="logo">
+                <ul>
+                    <li><a href="https://traveltriangle.com/blog/famous-historical-places-in-india/">Famous places</a></li>
+                  <li><a href="https://www.desiblitz.com/content/popular-arts-india">Cultural Works</a></li>
+                  <li> <div class="dropdown">
+    <button class="dropbtn">Contact us
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.gmail.com/">G-Mail</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://www.facebook.com/">Facebook</a>
+                    </div></div></li>
+                  </ul>
+<div id="google_translate_element"></div>
 
-    <section id="popular">
-        <h2>Popular Courses</h2>
-        <div class="course">
-            <h3>Web Development</h3>
-            <p>Learn HTML, CSS, JavaScript, and more.</p>
-            <a href="#">Enroll Now</a>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+              <button class="btn"><img src="https://cdn.glitch.global/4385b20b-e08a-4fec-a384-9f9379716f25/icon1.jpg?v=1696590662431">Services</button>
+          </nav>
+            <div class="content">
+                <h1>Rich Heritage&Culture to Explore</h1>
+                <p>Ensuring that the Indian Heritages sites sustain their outstanding universal value is an increasingly challenging mission.</p><br>
+
+            <form>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<button type="submit"  class="btnn">Search</button>
+</form>
+<ul id="myUL">
+  <li><a href="https://alkaline-reflective-decision.glitch.me/">Agra</a></li>
+  <li><a href="http://bamboo-assam.glitch.me">Assam</a></li>
+  <li><a href="https://billowy-hollow-raft.glitch.me/">Bead craft</a></li>
+  <li><a href="#">Coimbatore</a></li>
+  <li><a href="#">Chattisgarh</a></li>
+  <li><a href="#">Delhi</a></li>
+  <li><a href="#">Darjeeling</a></li>
+</ul>
+                
+             </div>
+            
         </div>
-        <div class="course">
-            <h3>Data Science</h3>
-            <p>Explore data analysis and machine learning.</p>
-            <a href="#">Enroll Now</a>
-        </div>
-        <div class="course">
-            <h3>Graphic Design</h3>
-            <p>Create stunning visuals with Adobe Creative Suite.</p>
-            <a href="#">Enroll Now</a>
-        </div>
-    </section>
-
-    <section id="subjects">
-        <h2>Subjects</h2>
-        <ul>
-            <li>Web Development</li>
-            <li>Data Science</li>
-            <li>Graphic Design</li>
-            <li>Marketing</li>
-            <li>Photography</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="submit.php" method="post">
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Your Email">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
+        <script>
+           function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 || filter === "") {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+            </script>
+  <div class="about-section">
+  <h1 style="text-align:center">About Our Page</h1>
+  <p>We are here to promote India's Rich Heritage and culture</p>
+  <p>As a web page we are promoting cultural tourism and small hand craft business</p>
+</div>
+  <center><marquee>**........Thanks for visting our page.......**</marquee></center>
+    <button onclick="toTop()" class="butn">Back to top</button>
+        
+    
     <footer>
-        <p>&copy; 2024 Online Courses. All rights reserved.</p>
+      <p><p>&copy; 2024 Landing Page. All rights reserved.</p></p>
     </footer>
-</body>
+  </body>
 </html>
